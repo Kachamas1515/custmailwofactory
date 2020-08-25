@@ -10,6 +10,7 @@ package customermailapplication;
  * @author amam
  */
 public class CustomerFactory {
+
     public static Customer createCustomer(String type) {
         if (type.equals("Regular")) {
             return new RegularCustomer();
@@ -19,6 +20,6 @@ public class CustomerFactory {
             return new DelinquentCustomer();
         }
         return null;
-        
+
     }
 }
